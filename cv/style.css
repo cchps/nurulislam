@@ -1,0 +1,759 @@
+/* ============================================
+   CURRICULUM VITAE - PROFESSIONAL DESIGN
+   Dr. Md. Nurul Islam
+   Clean Academic Style - Print Optimized
+   ============================================ */
+
+/* ============================================
+   CSS VARIABLES
+   ============================================ */
+:root {
+    /* Colors */
+    --color-primary: #1a1a1a;
+    --color-secondary: #2c2c2c;
+    --color-text: #333333;
+    --color-light: #666666;
+    --color-lighter: #999999;
+    --color-border: #d0d0d0;
+    --color-bg: #ffffff;
+    --color-bg-alt: #f8f9fa;
+    --color-accent: #0066cc;
+    --color-accent-light: #e6f2ff;
+
+    /* Fonts */
+    --font-serif: 'Crimson Text', Georgia, 'Times New Roman', serif;
+    --font-sans: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+}
+
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-size: 11pt;
+    line-height: 1.65;
+    color: var(--color-text);
+    background: #e8e8e8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   PRINT CONTROLS
+   ============================================ */
+.print-controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 12px;
+    z-index: 1000;
+    background: white;
+    padding: 16px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--color-border);
+}
+
+.print-controls button,
+.print-controls a {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+}
+
+.print-controls button:hover,
+.print-controls a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-print {
+    background: #0066cc;
+    color: white;
+}
+
+.btn-print:hover {
+    background: #0052a3;
+}
+
+.btn-download-pdf {
+    background: #28a745;
+    color: white;
+}
+
+.btn-download-pdf:hover {
+    background: #218838;
+}
+
+.btn-back {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-back:hover {
+    background: #5a6268;
+}
+
+/* ============================================
+   CV PAGE LAYOUT
+   ============================================ */
+.cv-page {
+    max-width: 210mm;
+    margin: 40px auto;
+    padding: 0 20px 40px;
+}
+
+.cv-container {
+    background: var(--color-bg);
+    padding: 30mm 25mm;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    min-height: 297mm;
+    position: relative;
+}
+
+/* ============================================
+   CV HEADER
+   ============================================ */
+.cv-header {
+    text-align: center;
+    padding-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.cv-name {
+    font-family: var(--font-serif);
+    font-size: 40pt;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.cv-title {
+    font-family: var(--font-sans);
+    font-size: 15pt;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 0.3px;
+}
+
+.cv-institution {
+    font-size: 11pt;
+    color: var(--color-light);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.4;
+}
+
+.cv-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: var(--spacing-lg);
+    font-size: 10pt;
+    color: var(--color-text);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.contact-item i {
+    color: var(--color-accent);
+    font-size: 9pt;
+}
+
+.contact-divider {
+    color: var(--color-border);
+    font-weight: 300;
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+.cv-section {
+    margin-bottom: var(--spacing-2xl);
+    page-break-inside: avoid;
+}
+
+.section-title {
+    font-family: var(--font-serif);
+    font-size: 18pt;
+    font-weight: 700;
+    color: var(--color-primary);
+    border-bottom: 2.5px solid var(--color-primary);
+    padding-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.section-content {
+    font-size: 11pt;
+    line-height: 1.7;
+}
+
+/* ============================================
+   PROFESSIONAL SUMMARY
+   ============================================ */
+.summary-text {
+    text-align: justify;
+    color: var(--color-text);
+    line-height: 1.8;
+    hyphens: auto;
+}
+
+/* ============================================
+   CV ITEMS
+   ============================================ */
+.cv-item {
+    margin-bottom: var(--spacing-lg);
+    page-break-inside: avoid;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: var(--spacing-sm);
+    gap: 20px;
+}
+
+.item-title {
+    font-weight: 700;
+    font-size: 12pt;
+    color: var(--color-primary);
+    flex: 1;
+    line-height: 1.4;
+}
+
+.item-date {
+    font-weight: 600;
+    font-size: 10.5pt;
+    color: var(--color-light);
+    white-space: nowrap;
+    font-style: italic;
+}
+
+.item-subtitle {
+    font-size: 11pt;
+    font-style: italic;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.5;
+}
+
+.item-institution {
+    font-size: 10.5pt;
+    color: var(--color-light);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.5;
+}
+
+.item-description {
+    font-size: 10.5pt;
+    color: var(--color-text);
+    line-height: 1.7;
+    text-align: justify;
+    margin-top: var(--spacing-sm);
+}
+
+.item-note {
+    font-size: 10pt;
+    color: var(--color-lighter);
+    font-style: italic;
+    margin-top: var(--spacing-xs);
+}
+
+/* ============================================
+   EXPERTISE GRID
+   ============================================ */
+.expertise-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+.expertise-item {
+    font-size: 10.5pt;
+    line-height: 1.7;
+    color: var(--color-text);
+    padding-left: 24px;
+    position: relative;
+    text-align: justify;
+}
+
+.expertise-item::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.expertise-item strong {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* ============================================
+   RESEARCH INTERESTS
+   ============================================ */
+.interests-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    line-height: 1.8;
+}
+
+.interest-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    font-size: 10pt;
+    color: var(--color-text);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* ============================================
+   PUBLICATIONS
+   ============================================ */
+.publication-note {
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-lg);
+    font-size: 11pt;
+    padding: var(--spacing-md);
+    background: var(--color-accent-light);
+    border-left: 4px solid var(--color-accent);
+    border-radius: 4px;
+}
+
+.publication-note i {
+    margin-right: var(--spacing-sm);
+}
+
+.publication-item {
+    margin-bottom: var(--spacing-lg);
+    page-break-inside: avoid;
+    padding-left: 24px;
+    text-indent: -24px;
+    line-height: 1.7;
+    text-align: justify;
+    font-size: 10.5pt;
+}
+
+.pub-authors {
+    font-weight: 400;
+    color: var(--color-text);
+}
+
+.pub-year {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.pub-title {
+    font-style: italic;
+    color: var(--color-text);
+}
+
+.pub-journal {
+    color: var(--color-secondary);
+}
+
+.pub-doi {
+    font-size: 9.5pt;
+    color: var(--color-lighter);
+    display: inline-block;
+    margin-top: 2px;
+}
+
+/* ============================================
+   TEACHING
+   ============================================ */
+.teaching-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+}
+
+.teaching-item {
+    padding: var(--spacing-md);
+    background: var(--color-bg-alt);
+    border-left: 3px solid var(--color-accent);
+    page-break-inside: avoid;
+    border-radius: 4px;
+}
+
+.course-title {
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+    font-size: 11pt;
+    line-height: 1.4;
+}
+
+.course-code {
+    font-size: 10pt;
+    color: var(--color-light);
+    font-style: italic;
+}
+
+/* ============================================
+   TALKS & CONFERENCES
+   ============================================ */
+.talk-item {
+    margin-bottom: var(--spacing-md);
+    page-break-inside: avoid;
+}
+
+.talk-title {
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.5;
+    font-size: 11pt;
+}
+
+.talk-details {
+    font-size: 10pt;
+    color: var(--color-light);
+    line-height: 1.6;
+}
+
+/* ============================================
+   SUPERVISION
+   ============================================ */
+.supervision-summary {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--color-accent-light);
+    border-left: 4px solid var(--color-accent);
+    margin-bottom: var(--spacing-xl);
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 11pt;
+}
+
+.student-item {
+    margin-bottom: var(--spacing-md);
+    page-break-inside: avoid;
+}
+
+.student-name {
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 11pt;
+}
+
+.student-level {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--color-accent);
+    color: white;
+    border-radius: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.student-thesis {
+    font-size: 10pt;
+    color: var(--color-text);
+    margin-top: var(--spacing-xs);
+    line-height: 1.6;
+}
+
+/* ============================================
+   TECHNICAL SKILLS
+   ============================================ */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+}
+
+.skill-category {
+    padding: var(--spacing-md);
+    background: var(--color-bg-alt);
+    border-radius: 6px;
+    border: 1px solid var(--color-border);
+}
+
+.skill-category-title {
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: 11pt;
+}
+
+.skill-list {
+    font-size: 10pt;
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.cv-footer {
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-lg);
+    text-align: center;
+    font-size: 9.5pt;
+    color: var(--color-lighter);
+}
+
+.footer-line {
+    width: 100px;
+    height: 2px;
+    background: var(--color-border);
+    margin: 0 auto var(--spacing-lg);
+}
+
+.cv-footer p {
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.6;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+@media print {
+    @page {
+        size: A4;
+        margin: 15mm 12mm;
+    }
+
+    html,
+    body {
+        background: white;
+        font-size: 10pt;
+    }
+
+    .cv-page {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .cv-container {
+        box-shadow: none;
+        padding: 0;
+        min-height: auto;
+    }
+
+    .no-print,
+    .print-controls {
+        display: none !important;
+    }
+
+    .cv-section {
+        page-break-inside: avoid;
+    }
+
+    .cv-item,
+    .publication-item,
+    .teaching-item,
+    .talk-item,
+    .student-item {
+        page-break-inside: avoid;
+    }
+
+    .cv-name {
+        font-size: 32pt;
+    }
+
+    .cv-title {
+        font-size: 13pt;
+    }
+
+    .section-title {
+        font-size: 15pt;
+    }
+
+    .interests-list {
+        gap: 6px;
+    }
+
+    .interest-tag {
+        padding: 5px 12px;
+        font-size: 9pt;
+        background: white;
+        border: 1px solid #ccc;
+    }
+
+    .teaching-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .publication-note {
+        background: white;
+        border: 1px solid #ccc;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 1024px) {
+    .print-controls {
+        top: 10px;
+        right: 10px;
+        padding: 12px 16px;
+        gap: 8px;
+    }
+
+    .print-controls button,
+    .print-controls a {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cv-page {
+        margin: 20px auto;
+        padding: 0 15px 20px;
+    }
+
+    .cv-container {
+        padding: 30px 20px;
+    }
+
+    .cv-name {
+        font-size: 28pt;
+    }
+
+    .cv-title {
+        font-size: 13pt;
+    }
+
+    .section-title {
+        font-size: 15pt;
+    }
+
+    .cv-contact {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contact-divider {
+        display: none;
+    }
+
+    .teaching-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .print-controls {
+        position: static;
+        flex-direction: column;
+        margin: 15px;
+        border-radius: 8px;
+    }
+
+    .print-controls button span,
+    .print-controls a span {
+        display: inline;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-name {
+        font-size: 22pt;
+    }
+
+    .cv-title {
+        font-size: 12pt;
+    }
+
+    .cv-institution {
+        font-size: 10pt;
+    }
+
+    .section-title {
+        font-size: 14pt;
+    }
+
+    .cv-container {
+        padding: 20px 15px;
+    }
+}
+
+/* ============================================
+   UTILITIES
+   ============================================ */
+.no-print {
+    /* Hidden in print mode */
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+    background: var(--color-accent-light);
+    color: var(--color-primary);
+}
+
+::-moz-selection {
+    background: var(--color-accent-light);
+    color: var(--color-primary);
+}

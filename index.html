@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Md. Nurul Islam | Professor of Geography & Environment | Jahangirnagar University</title>
+
+    <!-- Meta Tags -->
+    <meta name="description"
+        content="Dr. Md. Nurul Islam - Distinguished Professor of Geography and Environment at Jahangirnagar University, Bangladesh. Expert in GIS, Climate Change, Remote Sensing, and Environmental Management with 20+ years of research excellence.">
+    <meta name="keywords"
+        content="Dr. Nurul Islam, Geography Professor, Climate Change, GIS, Remote Sensing, Environmental Science, Jahangirnagar University, Bangladesh">
+    <meta name="author" content="Dr. Md. Nurul Islam">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dr. Md. Nurul Islam - Professor of Geography & Environment">
+    <meta property="og:description"
+        content="Distinguished Professor with expertise in GIS, Climate Change, and Environmental Management">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#home" class="logo">
+
+
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                        <li><a href="#expertise" class="nav-link" data-section="expertise">Expertise</a></li>
+                        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+                        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                        <li><a href="#research" class="nav-link" data-section="research">Research</a></li>
+                        <li><a href="#publications" class="nav-link" data-section="publications">Publications</a></li>
+                        <li><a href="#teaching" class="nav-link" data-section="teaching">Teaching</a></li>
+                        <li><a href="#talks" class="nav-link" data-section="talks">Talks</a></li>
+                        <li><a href="#awards" class="nav-link" data-section="awards">Awards</a></li>
+                        <li><a href="#supervision" class="nav-link" data-section="supervision">Supervision</a></li>
+                        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                    </ul>
+
+                    <div class="nav-actions">
+                        <a href="cv/index.html" target="_blank" class="btn-download">
+                            <i class="fas fa-file-alt"></i>
+                            <span>View CV</span>
+                        </a>
+                    </div>
+            </div>
+        </nav>
+
+        <!-- Progress Bar -->
+        <div class="scroll-progress">
+            <div class="scroll-progress-bar" id="scrollProgress"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+            <canvas id="particleCanvas"></canvas>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-main" data-aos="fade-up">
+                    <div class="hero-label">
+                        <i class="fas fa-award"></i>
+                        <span>Distinguished Professor | Research Scholar</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="title-line-single">Dr. Md. Nurul Islam</span>
+                    </h1>
+
+                    <div class="hero-subtitle">
+                        <span class="subtitle-icon"><i class="fas fa-graduation-cap"></i></span>
+                        <span>Professor of Geography and Environment</span>
+                    </div>
+
+                    <div class="hero-institution">
+                        <i class="fas fa-university"></i>
+                        <span>Jahangirnagar University, Bangladesh</span>
+                    </div>
+
+                    <div class="hero-specializations">
+                        <span class="specialization-tag">
+                            <i class="fas fa-satellite"></i>
+                            GIS & Remote Sensing
+                        </span>
+                        <span class="specialization-tag">
+                            <i class="fas fa-cloud-rain"></i>
+                            Climate Change
+                        </span>
+                        <span class="specialization-tag">
+                            <i class="fas fa-water"></i>
+                            Environmental Management
+                        </span>
+                    </div>
+
+                    <div class="hero-stats-grid">
+                        <div class="hero-stat" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-count="20">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                        </div>
+                        <div class="hero-stat" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="stat-icon"><i class="fas fa-book"></i></div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-count="52">0</div>
+                                <div class="stat-label">Publications</div>
+                            </div>
+                        </div>
+                        <div class="hero-stat" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-count="15">0</div>
+                                <div class="stat-label">Research Projects</div>
+                            </div>
+                        </div>
+                        <div class="hero-stat" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="stat-icon"><i class="fas fa-user-graduate"></i></div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-count="30">0</div>
+                                <div class="stat-label">Students Supervised</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            <span>Get in Touch</span>
+                        </a>
+                        <a href="#publications" class="btn btn-secondary">
+                            <i class="fas fa-book-open"></i>
+                            <span>View Publications</span>
+                        </a>
+                        <a href="https://scholar.google.com" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Google Scholar</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-contact-info" data-aos="fade-up" data-aos-delay="600">
+                        <a href="mailto:nurul.islam@juniv.edu" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>nurul.islam@juniv.edu</span>
+                        </a>
+                        <a href="tel:+8801711962342" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+880-1711-962342</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="700">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="scroll-text">Scroll to explore</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Get to Know Me</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-decoration"></div>
+                <p class="section-description">
+                    Two decades of dedication to geographic research, environmental science, and academic excellence
+                </p>
+            </div>
+
+            <div class="about-layout">
+                <!-- Profile Card -->
+                <div class="profile-card" data-aos="fade-right">
+                    <div class="profile-image-wrapper">
+                        <div class="profile-image-container">
+                            <div class="profile-image-frame">
+                                <img src="assets/images/profile.jpg" alt="Dr. Md. Nurul Islam - Professor of Geography"
+                                    class="profile-image"
+                                    onerror="this.style.display='none'; this.parentElement.querySelector('.profile-placeholder').style.display='flex';">
+                                <div class="profile-placeholder">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                            </div>
+                            <div class="profile-overlay"></div>
+                        </div>
+                        <div class="profile-badge">
+                            <div class="badge-icon"><i class="fas fa-award"></i></div>
+                            <div class="badge-text">
+                                <span class="badge-number">20+</span>
+                                <span class="badge-label">Years</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-info">
+                        <h3>Dr. Md. Nurul Islam</h3>
+                        <p class="profile-designation">Professor | PhD</p>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Professor (Since 2015)</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-university"></i>
+                                <span>Jahangirnagar University</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>PhD, University of Nottingham</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+
+                        <div class="profile-social">
+                            <a href="#" class="social-link" title="Google Scholar">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                            <a href="#" class="social-link" title="ResearchGate">
+                                <i class="fab fa-researchgate"></i>
+                            </a>
+                            <a href="#" class="social-link" title="ORCID">
+                                <i class="fab fa-orcid"></i>
+                            </a>
+                            <a href="#" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div class="about-content" data-aos="fade-left">
+                    <div class="content-block">
+                        <h3 class="content-title">
+                            <i class="fas fa-user-circle"></i>
+                            Professional Profile
+                        </h3>
+                        <p class="lead-paragraph">
+                            Professor Islam has been in the university teaching and research profession for more than
+                            two decades with expertise in Geographical Information Systems (GIS), climate change, and
+                            environmental management.
+                        </p>
+                        <p>
+                            Currently serving as Professor at the Department of Geography and Environment, Jahangirnagar
+                            University, he has been actively involved in cutting-edge research in floodplain and
+                            watershed management, climate change impacts on agriculture, and environmental components
+                            analysis.
+                        </p>
+                        <p>
+                            Apart from his permanent position at Jahangirnagar University, Professor Islam has served as
+                            Honorary Assistant Professor at the School of Geography, University of Nottingham, UK. He is
+                            supervising several MPhil and PhD candidates on climate change, ecosystem services, flood
+                            management, and environmental dynamics.
+                        </p>
+                        <p>
+                            He is an enlisted reviewer of several peer-reviewed high-impact journals including Climate
+                            Change, Land Degradation and Sedimentology. Professor Islam is also involved in development
+                            activities with several institutions, having served as consultant to Bangladesh NGO
+                            Foundation, BRAC, and Arayanak Foundation.
+                        </p>
+                    </div>
+
+                    <div class="highlights-grid">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Academic Excellence</h4>
+                                <p>PhD from University of Nottingham, UK with outstanding research contributions</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Research Leadership</h4>
+                                <p>Leading multiple national and international research projects</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-globe-asia"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Global Recognition</h4>
+                                <p>Reviewer for high-impact international journals and conferences</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Dedicated Educator</h4>
+                                <p>Mentored 30+ graduate students to academic success</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="section expertise-section">
+        <div class="section-background">
+            <div class="bg-pattern"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">My Specializations</span>
+                <h2 class="section-title">Areas of Expertise</h2>
+                <div class="section-decoration"></div>
+                <p class="section-description">
+                    Specialized knowledge and skills developed through years of research and practice
+                </p>
+            </div>
+
+            <div class="expertise-grid">
+                <div class="expertise-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="expertise-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>GIS & Remote Sensing</h3>
+                    <p>Advanced spatial analysis, geospatial technologies, and satellite imagery interpretation for
+                        environmental monitoring</p>
+                    <ul class="expertise-skills">
+                        <li><i class="fas fa-check"></i> Arc GIS & Arc View</li>
+                        <li><i class="fas fa-check"></i> Erdas Imagine</li>
+                        <li><i class="fas fa-check"></i> Spatial Modeling</li>
+                        <li><i class="fas fa-check"></i> Digital Mapping</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="expertise-icon">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <h3>Climate Change Research</h3>
+                    <p>Climate variability analysis, agricultural impacts assessment, and adaptation strategies
+                        development</p>
+                    <ul class="expertise-skills">
+                        <li><i class="fas fa-check"></i> Climate Modeling</li>
+                        <li><i class="fas fa-check"></i> Impact Assessment</li>
+                        <li><i class="fas fa-check"></i> Adaptation Planning</li>
+                        <li><i class="fas fa-check"></i> Vulnerability Analysis</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="expertise-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Floodplain Management</h3>
+                    <p>Watershed dynamics, sedimentation patterns, and sustainable floodplain resource management</p>
+                    <ul class="expertise-skills">
+                        <li><i class="fas fa-check"></i> Watershed Analysis</li>
+                        <li><i class="fas fa-check"></i> Flood Risk Assessment</li>
+                        <li><i class="fas fa-check"></i> Sedimentation Study</li>
+                        <li><i class="fas fa-check"></i> River Morphology</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="expertise-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Environmental Analysis</h3>
+                    <p>Ecosystem services evaluation, land use dynamics, and environmental impact assessment</p>
+                    <ul class="expertise-skills">
+                        <li><i class="fas fa-check"></i> Environmental Impact</li>
+                        <li><i class="fas fa-check"></i> Ecosystem Services</li>
+                        <li><i class="fas fa-check"></i> Land Use Change</li>
+                        <li><i class="fas fa-check"></i> Sustainability Analysis</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="expertise-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Disaster Management</h3>
+                    <p>Natural hazard assessment, risk mapping, and disaster preparedness planning</p>
+                    <ul class="expertise-skills">
+                        <li><i class="fas fa-check"></i> Hazard Mapping</li>
+                        <li><i class="fas fa-check"></i> Risk Assessment</li>
+                        <li><i class="fas fa-check"></i> Emergency Planning</li>
+                        <li><i class="fas fa-check"></i> Resilience Building</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="expertise-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Research Methodology</h3>
+                    <p>Advanced statistical analysis, data collection techniques, and research design</p>
+                    <ul class="expertise-skills">
+                        <li><i class="fas fa-check"></i> SPSS Analysis</li>
+                        <li><i class="fas fa-check"></i> Bayesian Networks</li>
+                        <li><i class="fas fa-check"></i> Field Research</li>
+                        <li><i class="fas fa-check"></i> Data Visualization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Research Interests -->
+            <div class="research-interests" data-aos="fade-up">
+                <h3 class="interests-title">
+                    <i class="fas fa-lightbulb"></i>
+                    Research Interests
+                </h3>
+                <div class="interests-tags">
+                    <span class="interest-tag">Climate Change Impacts</span>
+                    <span class="interest-tag">Land Use Dynamics</span>
+                    <span class="interest-tag">Environmental Degradation</span>
+                    <span class="interest-tag">Agricultural Hazards</span>
+                    <span class="interest-tag">Water & Sanitation</span>
+                    <span class="interest-tag">Natural Disasters</span>
+                    <span class="interest-tag">Rural Livelihood</span>
+                    <span class="interest-tag">Floodplain Sedimentation</span>
+                    <span class="interest-tag">Ecosystem Services</span>
+                    <span class="interest-tag">Watershed Management</span>
+                    <span class="interest-tag">Coastal Erosion</span>
+                    <span class="interest-tag">Urban Environmental Quality</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Academic Background</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-decoration"></div>
+                <p class="section-description">
+                    Academic journey marked by excellence and continuous pursuit of knowledge
+                </p>
+            </div>
+
+            <div class="education-timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2011</div>
+                        <div class="timeline-degree">Doctor of Philosophy (PhD)</div>
+                        <div class="timeline-field">Geography</div>
+                        <div class="timeline-institution">
+                            <i class="fas fa-university"></i>
+                            University of Nottingham, United Kingdom
+                        </div>
+                        <div class="timeline-thesis">
+                            <strong>Dissertation:</strong> Sedimentation, Vegetation and Land Use Dynamics on The
+                            Brahmaputra-Jamuna floodplain, Bangladesh
+                        </div>
+                        <div class="timeline-highlights">
+                            <span class="highlight-badge"><i class="fas fa-award"></i> Research Excellence</span>
+                            <span class="highlight-badge"><i class="fas fa-trophy"></i> Outstanding Contribution</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">1996</div>
+                        <div class="timeline-degree">Master of Science (MSc)</div>
+                        <div class="timeline-field">Geography</div>
+                        <div class="timeline-institution">
+                            <i class="fas fa-university"></i>
+                            Jahangirnagar University, Bangladesh
+                        </div>
+                        <div class="timeline-thesis">
+                            <strong>Thesis:</strong> An analysis of Cross-sectional Morphology and Hydraulic Geometry: A
+                            case study on the Manu River in Bangladesh
+                        </div>
+                        <div class="timeline-grade">
+                            <i class="fas fa-star"></i> First Class
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">1995</div>
+                        <div class="timeline-degree">Bachelor of Science (BSc Honours)</div>
+                        <div class="timeline-field">Geography</div>
+                        <div class="timeline-institution">
+                            <i class="fas fa-university"></i>
+                            Jahangirnagar University, Bangladesh
+                        </div>
+                        <div class="timeline-grade">
+                            <i class="fas fa-star"></i> First Class
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="section-background">
+            <div class="bg-pattern"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Career Journey</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="section-decoration"></div>
+                <p class="section-description">
+                    Two decades of teaching excellence and academic leadership
+                </p>
+            </div>
+
+            <div class="experience-timeline" id="experienceTimeline">
+                <!-- Populated by JavaScript -->
+            </div>
+
+            <!-- Honorary Positions -->
+            <div class="honorary-section" data-aos="fade-up">
+                <h3 class="subsection-title">
+                    <i class="fas fa-award"></i>
+                    Honorary Positions
+                </h3>
+                <div class="honorary-grid" id="honoraryGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Consulting & Professional Services -->
+            <div class="consulting-section" data-aos="fade-up">
+                <h3 class="subsection-title">
+                    <i class="fas fa-handshake"></i>
+                    Consulting & Professional Services
+                </h3>
+                <div class="consulting-grid">
+                    <div class="consulting-card">
+                        <div class="consulting-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Bangladesh NGO Foundation</h4>
+                        <p class="consulting-role">Monitoring and Evaluation Advisor</p>
+                        <p class="consulting-period">2012 - Present</p>
+                        <p class="consulting-desc">Socioeconomic development projects evaluation</p>
+                    </div>
+
+                    <div class="consulting-card">
+                        <div class="consulting-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h4>World Bank - HEQEP</h4>
+                        <p class="consulting-role">Sub-Project Manager</p>
+                        <p class="consulting-period">2014 - 2016</p>
+                        <p class="consulting-desc">Higher Education Quality Enhancement</p>
+                    </div>
+
+                    <div class="consulting-card">
+                        <div class="consulting-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>BRAC</h4>
+                        <p class="consulting-role">Research Consultant</p>
+                        <p class="consulting-period">2012 - 2013</p>
+                        <p class="consulting-desc">Food security and water productivity research</p>
+                    </div>
+
+                    <div class="consulting-card">
+                        <div class="consulting-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h4>Arayanak Foundation</h4>
+                        <p class="consulting-role">Field Coordinator</p>
+                        <p class="consulting-period">2012 - 2013</p>
+                        <p class="consulting-desc">Chunati forest cover change analysis (GIZ funded)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Projects Section -->
+    <section id="research" class="section research-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Impactful Research</span>
+                <h2 class="section-title">Research Projects</h2>
+                <div class="section-decoration"></div>
+                <p class="section-description">
+                    Leading cutting-edge research projects addressing critical environmental challenges
+                </p>
+            </div>
+
+            <div class="research-stats" data-aos="fade-up">
+                <div class="research-stat-card">
+                    <div class="stat-icon-wrapper">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Total Projects</div>
+                </div>
+
+                <div class="research-stat-card">
+                    <div class="stat-icon-wrapper">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-number" data-count="9">0</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+
+                <div class="research-stat-card">
+                    <div class="stat-icon-wrapper">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-label">International Collaborations</div>
+                </div>
+
+                <div class="research-stat-card">
+                    <div class="stat-icon-wrapper">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-number">$</div>
+                    <div class="stat-label">Multiple Funders</div>
+                </div>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section publications-section">
+        <div class="section-background">
+            <div class="bg-pattern"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Scholarly Contributions</span>
+                <h2 class="section-title">Publications</h2>
+                <div class="section-decoration"></div>
+                <p class="section-description">
+                    52+ peer-reviewed publications in high-impact international journals
+                </p>
+            </div>
+
+            <div class="publications-stats" data-aos="fade-up">
+                <div class="pub-stat-card">
+                    <div class="pub-stat-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="pub-stat-number" id="totalPubs">52</div>
+                    <div class="pub-stat-label">Total Publications</div>
+                </div>
+
+                <div class="pub-stat-card">
+                    <div class="pub-stat-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="pub-stat-number" id="journalPubs">45</div>
+                    <div class="pub-stat-label">Journal Articles</div>
+                </div>
+
+                <div class="pub-stat-card">
+                    <div class="pub-stat-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="pub-stat-number" id="bookPubs">3</div>
+                    <div class="pub-stat-label">Books/Chapters</div>
+                </div>
+
+                <div class="pub-stat-card">
+                    <div class="pub-stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="pub-stat-number" id="confPubs">9</div>
+                    <div class="pub-stat-label">Conference Papers</div>
+                </div>
+            </div>
+
+            <div class="publications-controls" data-aos="fade-up">
+                <div class="search-wrapper">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="pubSearch"
+                            placeholder="Search publications by title, author, or keyword...">
+                        <button class="search-clear" id="searchClear">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fas fa-globe"></i>
+                            All Publications
+                        </button>
+                        <button class="filter-btn" data-filter="2020">
+                            <i class="fas fa-calendar"></i>
+                            2020+
+                        </button>
+                        <button class="filter-btn" data-filter="2015">
+                            <i class="fas fa-calendar"></i>
+                            2015-2019
+                        </button>
+                        <button class="filter-btn" data-filter="2010">
+                            <i class="fas fa-calendar"></i>
+                            2010-2014
+                        </button>
+                        <button class="filter-btn" data-filter="2000">
+                            <i class="fas fa-calendar"></i>
+                            Before 2010
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publications-container" id="publicationsList">
+                <!-- Populated by JavaScript -->
+            </div>
+
+            <div class="load-more-wrapper" data-aos="fade-up">
+                <button class="btn btn-load-more" id="loadMorePubs">
+                    <i class="fas fa-chevron-down"></i>
+                    <span>Load More Publications</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="section teaching-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Academic Instruction</span>
+                <h2 class="section-title">University Teaching</h2>
+                <div class="section-decoration"></div>
+                <p class="section-description">
+                    Shaping future geographers and environmental scientists through quality education
+                </p>
+            </div>
+
+            <div class="teaching-intro" data-aos="fade-up">
+                <p>Teaching courses at undergraduate and graduate levels, covering fundamental and advanced topics in
+                    geography, environment, GIS, and related disciplines.</p>
+            </div>
+
+            <div class="teaching-grid" id="teachingGrid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Talks & Presentations Section -->
+    <section id="talks" class="section talks-section">
+        <div class="section-background">
+            <div class="bg-pattern"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Knowledge Sharing</span>
+                <h2 class="section-title">Talks & Presentations</h2>
+                <div class="section-decoration"></div>
+                <p class="section-description">
+                    Sharing research insights at international conferences, workshops, and academic forums
+                </p>
+            </div>
+
+            <div class="talks-tabs" data-aos="fade-up">
+                <button class="tab-btn active" data-tab="all">
+                    <i class="fas fa-globe"></i>
+                    <span>All Presentations</span>
+                </button>
+                <button class="tab-btn" data-tab="keynote">
+                    <i class="fas fa-microphone"></i>
+                    <span>Keynote Speeches</span>
+                </button>
+                <button class="tab-btn" data-tab="conference">
+                    <i class="fas fa-users"></i>
+                    <span>Conferences</span>
+                </button>
+                <button class="tab-btn" data-tab="workshop">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>Workshops</span>
+                </button>
+                <button class="tab-btn" data-tab="media">
+                    <i class="fas fa-tv"></i>
+                    <span>Media</span>
+                </button>
+            </div>
+
+            <div class="talks-container" id="talksContainer">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="section awards-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Recognition</span>
+                <h2 class="section-title">Awards & Honors</h2>
+                <div class="section-decoration"></div>
+                <p class="section-description">
+                    Academic excellence recognized through prestigious awards and scholarships
+                </p>
+            </div>
+
+            <div class="awards-grid" id="awardsGrid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Supervision Section -->
+    <section id="supervision" class="section supervision-section">
+        <div class="section-background">
+            <div class="bg-pattern"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Academic Mentorship</span>
+                <h2 class="section-title">Student Supervision</h2>
+                <div class="section-decoration"></div>
+                <p class="section-description">
+                    Guiding the next generation of researchers to academic excellence
+                </p>
+            </div>
+
+            <div class="supervision-stats" data-aos="fade-up">
+                <div class="supervision-stat-card">
+                    <div class="supervision-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="supervision-number" id="phdCount">0</div>
+                    <div class="supervision-label">PhD Students</div>
+                </div>
+
+                <div class="supervision-stat-card">
+                    <div class="supervision-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="supervision-number" id="mphilCount">0</div>
+                    <div class="supervision-label">MPhil Students</div>
+                </div>
+
+                <div class="supervision-stat-card">
+                    <div class="supervision-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <div class="supervision-number" id="mscCount">0</div>
+                    <div class="supervision-label">MSc Students</div>
+                </div>
+
+                <div class="supervision-stat-card">
+                    <div class="supervision-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="supervision-number" id="bscCount">0</div>
+                    <div class="supervision-label">BSc Students</div>
+                </div>
+            </div>
+
+            <div class="supervision-tabs" data-aos="fade-up">
+                <button class="supervision-tab-btn active" data-level="all">
+                    <i class="fas fa-users"></i>
+                    All Students
+                </button>
+                <button class="supervision-tab-btn" data-level="phd">
+                    <i class="fas fa-user-graduate"></i>
+                    PhD/MPhil
+                </button>
+                <button class="supervision-tab-btn" data-level="masters">
+                    <i class="fas fa-graduation-cap"></i>
+                    Masters
+                </button>
+                <button class="supervision-tab-btn" data-level="undergrad">
+                    <i class="fas fa-user-friends"></i>
+                    Undergraduate
+                </button>
+            </div>
+
+            <div class="students-container" id="studentsContainer">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Get Connected</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-decoration"></div>
+                <p class="section-description">
+                    Let's collaborate on research, discuss opportunities, or simply connect
+                </p>
+            </div>
+
+            <div class="contact-layout">
+                <!-- Contact Info -->
+                <div class="contact-info-section" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Office Address</h3>
+                        <p>
+                            Department of Geography and Environment<br>
+                            Jahangirnagar University<br>
+                            Savar, Dhaka-1342<br>
+                            Bangladesh
+                        </p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>
+                            <a href="mailto:nurul.islam@juniv.edu">nurul.islam@juniv.edu</a><br>
+                            <a href="mailto:nislamju@gmail.com">nislamju@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>
+                            <a href="tel:+8801711962342">+880-1711-962342</a><br>
+                            <a href="tel:+8801823222561">+880-1823-222561</a>
+                        </p>
+                        <p class="contact-note">
+                            <i class="fas fa-fax"></i> Fax: +880-2-7791052
+                        </p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Academic Profiles</h3>
+                        <div class="contact-social">
+                            <a href="#" class="social-icon" title="Google Scholar">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                            <a href="#" class="social-icon" title="ResearchGate">
+                                <i class="fab fa-researchgate"></i>
+                            </a>
+                            <a href="#" class="social-icon" title="ORCID">
+                                <i class="fab fa-orcid"></i>
+                            </a>
+                            <a href="#" class="social-icon" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.564486595!2d90.26632831498!3d23.877231484550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755ebd3d6df9569%3A0x277b3b346e9679f7!2sJahangirnagar%20University!5e0!3m2!1sen!2sbd!4v1234567890"
+                            width="100%" height="300" style="border:0; border-radius: 1rem;" allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section" data-aos="fade-left">
+                    <div class="form-wrapper">
+                        <h3>Send a Message</h3>
+                        <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="fas fa-user"></i>
+                                    Your Name
+                                </label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Your Email
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">
+                                    <i class="fas fa-tag"></i>
+                                    Subject
+                                </label>
+                                <input type="text" id="subject" name="subject" placeholder="What is this regarding?"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">
+                                    <i class="fas fa-comment"></i>
+                                    Message
+                                </label>
+                                <textarea id="message" name="message" rows="6" placeholder="Type your message here..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- About Column -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Dr. Nurul Islam</span>
+                        </div>
+                        <p class="footer-about">
+                            Professor of Geography and Environment at Jahangirnagar University, dedicated to advancing
+                            knowledge in GIS, climate change, and environmental sustainability.
+                        </p>
+                        <div class="footer-social">
+                            <a href="mailto:nurul.islam@juniv.edu"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-researchgate"></i></a>
+                            <a href="#"><i class="fas fa-graduation-cap"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                            <li><a href="#expertise"><i class="fas fa-chevron-right"></i> Expertise</a></li>
+                            <li><a href="#research"><i class="fas fa-chevron-right"></i> Research</a></li>
+                            <li><a href="#publications"><i class="fas fa-chevron-right"></i> Publications</a></li>
+                            <li><a href="#teaching"><i class="fas fa-chevron-right"></i> Teaching</a></li>
+                            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Research Areas -->
+                    <div class="footer-col">
+                        <h4>Research Focus</h4>
+                        <ul class="footer-links">
+                            <li><i class="fas fa-check"></i> Climate Change</li>
+                            <li><i class="fas fa-check"></i> GIS & Remote Sensing</li>
+                            <li><i class="fas fa-check"></i> Floodplain Management</li>
+                            <li><i class="fas fa-check"></i> Environmental Analysis</li>
+                            <li><i class="fas fa-check"></i> Disaster Management</li>
+                            <li><i class="fas fa-check"></i> Sustainable Development</li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-col">
+                        <h4>Contact Info</h4>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="fas fa-university"></i>
+                                <span>Jahangirnagar University<br>Savar, Dhaka-1342</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+880-1711-962342</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>nurul.islam@juniv.edu</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Dr. Md. Nurul Islam. All Rights Reserved.</p>
+                    <p>Dedicated to Academic Excellence and Environmental Sustainability</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="toast-content">
+            <h4 class="toast-title">Success</h4>
+            <p class="toast-message">Your message has been sent successfully!</p>
+        </div>
+        <button class="toast-close" onclick="closeToast()">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/cv-generator.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
